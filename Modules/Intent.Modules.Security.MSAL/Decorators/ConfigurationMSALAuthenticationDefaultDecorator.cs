@@ -1,9 +1,9 @@
+using System.Collections.Generic;
+using System.Linq;
 using Intent.Engine;
 using Intent.Modules.Common;
 using Intent.Modules.Security.MSAL.Templates.ConfigurationMSALAuthentication;
 using Intent.RoslynWeaver.Attributes;
-using System.Collections.Generic;
-using System.Linq;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.Templates.TemplateDecorator", Version = "1.0")]
@@ -43,11 +43,11 @@ namespace Intent.Modules.Security.MSAL.Decorators
         {
             return @"
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection(""AzureAd""))
+            .AddMicrosoftIdentityWebApi(configuration.GetSection(""AzureAd""))
                 .EnableTokenAcquisitionToCallDownstreamApi()
-                .AddMicrosoftGraph(builder.Configuration.GetSection(""MicrosoftGraph""))
+                .AddMicrosoftGraph(configuration.GetSection(""MicrosoftGraph""))
                 .AddInMemoryTokenCaches();
-            ;";
+            ";
         }
     }
 }

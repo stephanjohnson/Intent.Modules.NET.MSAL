@@ -33,9 +33,9 @@ namespace Intent.Modules.Security.MSAL.Templates.CurrentUserService
         /// </summary>
         public override string TransformText()
         {
-            this.Write("using System.Security.Claims;\r\nusing System.Threading.Tasks;\r\nusing IdentityModel" +
-                    ";\r\nusing Microsoft.AspNetCore.Authorization;\r\nusing Microsoft.AspNetCore.Http;\r\n" +
-                    "\r\n[assembly: DefaultIntentManaged(Mode.Fully)]\r\n\r\nnamespace ");
+            this.Write("using System.Security.Claims;\r\nusing System.Threading.Tasks;\r\nusing System.Identi" +
+                    "tyModel.Tokens.Jwt;\r\nusing Microsoft.AspNetCore.Authorization;\r\nusing Microsoft." +
+                    "AspNetCore.Http;\r\n\r\n[assembly: DefaultIntentManaged(Mode.Fully)]\r\n\r\nnamespace ");
             
             #line 19 "D:\src\stephanjohnson\Intent.Modules.NET.MSAL\Modules\Intent.Modules.Security.MSAL\Templates\CurrentUserService\CurrentUserServiceTemplate.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(Namespace));
@@ -70,9 +70,9 @@ namespace Intent.Modules.Security.MSAL.Templates.CurrentUserService
             _authorizationService = authorizationService;
         }
 
-        public string UserId => _claimsPrincipal?.FindFirst(JwtClaimTypes.Subject)?.Value;
+        public string UserId => _claimsPrincipal?.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
 
-        public string UserName => _claimsPrincipal?.FindFirst(JwtClaimTypes.Name)?.Value;
+        public string UserName => _claimsPrincipal?.FindFirst(JwtRegisteredClaimNames.Name)?.Value;
 
         public async Task<bool> AuthorizeAsync(string policy)
         {

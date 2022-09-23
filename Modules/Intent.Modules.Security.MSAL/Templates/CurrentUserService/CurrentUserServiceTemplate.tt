@@ -10,7 +10,7 @@
 <#@ import namespace="Intent.Modules.Application.Identity.Templates" #>
 using System.Security.Claims;
 using System.Threading.Tasks;
-using IdentityModel;
+using System.IdentityModel.Tokens.Jwt;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 
@@ -29,9 +29,9 @@ namespace <#= Namespace #>
             _authorizationService = authorizationService;
         }
 
-        public string UserId => _claimsPrincipal?.FindFirst(JwtClaimTypes.Subject)?.Value;
+        public string UserId => _claimsPrincipal?.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
 
-        public string UserName => _claimsPrincipal?.FindFirst(JwtClaimTypes.Name)?.Value;
+        public string UserName => _claimsPrincipal?.FindFirst(JwtRegisteredClaimNames.Name)?.Value;
 
         public async Task<bool> AuthorizeAsync(string policy)
         {

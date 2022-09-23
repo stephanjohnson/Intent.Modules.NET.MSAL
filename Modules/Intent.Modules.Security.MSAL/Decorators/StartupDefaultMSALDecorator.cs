@@ -24,8 +24,6 @@ namespace Intent.Modules.Security.MSAL.Decorators
         {
             _template = template;
             _application = application;
-            Priority = -10;
-            _template.AddTemplateDependency(ConfigurationMSALAuthenticationTemplate.TemplateId);
         }
 
         public override string Configuration()

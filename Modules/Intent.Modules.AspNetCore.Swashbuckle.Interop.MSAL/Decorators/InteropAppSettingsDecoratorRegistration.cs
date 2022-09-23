@@ -1,8 +1,8 @@
 using System.ComponentModel;
 using Intent.Engine;
 using Intent.Modules.Common.Registrations;
-using Intent.RoslynWeaver.Attributes;
 using Intent.Modules.VisualStudio.Projects.Templates.CoreWeb.AppSettings;
+using Intent.RoslynWeaver.Attributes;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.Templates.TemplateDecoratorRegistration", Version = "1.0")]

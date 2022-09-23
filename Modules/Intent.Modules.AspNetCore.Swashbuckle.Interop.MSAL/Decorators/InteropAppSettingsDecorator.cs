@@ -1,11 +1,12 @@
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Metadata;
 using Intent.Engine;
+using Intent.Modules.AspNetCore.Events;
 using Intent.Modules.AspNetCore.Swashbuckle.Interop.MSAL.Events;
 using Intent.Modules.VisualStudio.Projects.Templates.CoreWeb.AppSettings;
 using Intent.RoslynWeaver.Attributes;
 using Newtonsoft.Json.Linq;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
 
 [assembly: DefaultIntentManaged(Mode.Merge)]
 [assembly: IntentTemplate("Intent.ModuleBuilder.Templates.TemplateDecorator", Version = "1.0")]
@@ -29,8 +30,8 @@ namespace Intent.Modules.AspNetCore.Swashbuckle.Interop.MSAL.Decorators
         {
             _template = template;
             _application = application;
+            Priority = 100;
             _application.EventDispatcher.Subscribe<SwaggerOAuth2SchemeEvent>(Handle);
-
             _swaggerSchemes = new List<SwaggerOAuth2SchemeEvent>();
         }
 
