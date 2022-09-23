@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="15804a1b-ac77-47c2-b8f3-61d24ce5e9f8" type="Template Decorator" typeId="f0f46278-29ea-42bd-9206-0e7034f623bc">
+  <name>InteropAppSettingsDecorator</name>
+  <display>InteropAppSettingsDecorator: AppSettingsDecorator</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <typeReference id="a793968b-49c1-47a8-a05a-1fd7aae86bf2">
+    <typeId>e2ec6205-819b-4c6c-8bbd-b15dd573c525</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>false</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>Intent.VisualStudio.Projects</typePackageName>
+    <typePackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>be05fb3d-80d1-4f35-b137-26a6ad0c0778</parentFolderId>
+  <packageId>be05fb3d-80d1-4f35-b137-26a6ad0c0778</packageId>
+  <packageName>Intent.AspNetCore.Swashbuckle.Interop.MSAL</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

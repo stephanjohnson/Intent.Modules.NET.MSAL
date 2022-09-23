@@ -9,5 +9,6 @@
   <lastUsedApplicationTemplate id="Intent.ApplicationTemplate.ModuleBuilder" version="3.3.3" />
   <applications>
     <application id="84a6ab17-88dd-407b-9c9b-a45464b66a12" name="Security.MSAL" relativePath="Intent.Modules.Security.MSAL/Security.MSAL.application.config" />
+    <application id="ff63bd2c-428e-4608-a8c9-5acc04187c54" name="Intent.Modules.AspNetCore.Swashbuckle.Interop.MSAL" relativePath="Intent.Modules.AspNetCore.Swashbuckle.Interop.MSAL/Intent.Modules.AspNetCore.Swashbuckle.Interop.MSAL.application.config" />
   </applications>
 </solution>

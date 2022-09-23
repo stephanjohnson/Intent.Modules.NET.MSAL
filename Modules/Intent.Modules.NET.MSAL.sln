@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET Core", "NET Core", "{79219D31-C36A-4195-9CA8-3A53BC77429F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intent.Modules.Security.MSAL", "Intent.Modules.Security.MSAL\Intent.Modules.Security.MSAL.csproj", "{768108C5-5757-47FB-B4C4-CCC16685BB58}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intent.Modules.Application.Identity", "..\..\..\intent\Intent.Modules.NET\Modules\Intent.Modules.Application.Identity\Intent.Modules.Application.Identity.csproj", "{D01B86EE-BF61-4B1E-A472-EB82AB56B889}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "Intent.Modules.AspNetCore.Swashbuckle.Interop.MSAL", "Intent.Modules.AspNetCore.Swashbuckle.Interop.MSAL\Intent.Modules.AspNetCore.Swashbuckle.Interop.MSAL.csproj", "{7DDE5C64-5798-4810-BBC1-CD786D298688}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{768108C5-5757-47FB-B4C4-CCC16685BB58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768108C5-5757-47FB-B4C4-CCC16685BB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768108C5-5757-47FB-B4C4-CCC16685BB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768108C5-5757-47FB-B4C4-CCC16685BB58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D01B86EE-BF61-4B1E-A472-EB82AB56B889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D01B86EE-BF61-4B1E-A472-EB82AB56B889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D01B86EE-BF61-4B1E-A472-EB82AB56B889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D01B86EE-BF61-4B1E-A472-EB82AB56B889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DDE5C64-5798-4810-BBC1-CD786D298688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DDE5C64-5798-4810-BBC1-CD786D298688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DDE5C64-5798-4810-BBC1-CD786D298688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DDE5C64-5798-4810-BBC1-CD786D298688}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{768108C5-5757-47FB-B4C4-CCC16685BB58} = {79219D31-C36A-4195-9CA8-3A53BC77429F}
+		{7DDE5C64-5798-4810-BBC1-CD786D298688} = {79219D31-C36A-4195-9CA8-3A53BC77429F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3ED94A9-6EB8-4988-BA8D-BE5AC88DAE45}
+	EndGlobalSection
+EndGlobal
